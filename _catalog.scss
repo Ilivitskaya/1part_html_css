@@ -1,0 +1,79 @@
+.top-catalog {
+    height: 400px;
+    background-image: url(img/topcatalog.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+        margin-top: 127px;
+    }
+}
+
+.menu-catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+
+    &__nav {
+        display: flex;
+    }
+
+    &__nav :first-child ::after {
+        content: "/";
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__link {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+}
+
+.filter {
+    display: flex;
+    gap: 10px;
+
+    &__button {
+        background-color: #fff;
+        background-image: url(img/Polygon.svg);
+        background-repeat: no-repeat;
+        background-position: center right 22px;
+
+        width: 182px;
+        height: 40px;
+
+        box-sizing: border-box;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 20px;
+
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    &__select {
+        appearance: none;
+
+        background-image: url(img/Polygon.svg);
+        background-repeat: no-repeat;
+        background-position: center right 22px;
+
+        width: 227px;
+        height: 40px;
+
+        box-sizing: border-box;
+        border: 1px solid rgb(196, 196, 196);
+        border-radius: 20px;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-left: 22px;
+    }
+}
