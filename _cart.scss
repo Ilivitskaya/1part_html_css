@@ -1,0 +1,177 @@
+.top-cart {
+    height: 400px;
+    background-image: url(img/topcart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cart {
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: $gap;
+    margin-top: 64px;
+
+
+    &__choice {
+        grid-column: 1/9;
+    }
+
+
+    &__columns {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding-bottom: 14px;
+    }
+
+    &__column-name {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    &__product {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        border-top: 0.5px solid rgb(202, 205, 216);
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        &:first-child {
+            padding-top: 25px;
+        }
+    }
+
+    &__product-img {
+        width: 173px;
+    }
+
+    &__product-info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__product-name {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+
+    &__product-text {
+        color: rgb(136, 136, 136);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        padding-top: 14px;
+        padding-bottom: 16px;
+        max-width: 250px;
+    }
+
+    &__product-input {
+        width: 71px;
+        height: 51px;
+        border-radius: 6px;
+        border: none;
+        box-sizing: border-box;
+        background: rgb(247, 246, 246);
+        color: rgb(0, 0, 0);
+        font-family: "Poppins";
+        font-weight: 600;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 210%;
+        padding-left: 21px;
+    }
+
+    &__product-price {
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    &__link-box {
+        padding-top: 15px;
+    }
+
+    &__product-link {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        text-decoration: underline;
+        padding-right: 30px;
+    }
+
+    &__button-box {
+        margin-top: 50px;
+    }
+
+    &__button {
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 50px;
+        width: 200px;
+        height: 37px;
+        margin-right: 8px;
+    }
+
+    &__form {
+        grid-column: 9/13;
+        display: flex;
+        flex-direction: column;
+        padding-top: 42px;
+        padding-left: 27px;
+        padding-right: 64px;
+        padding-bottom: 148px;
+    }
+
+    &__form {
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        box-sizing: border-box;
+    }
+
+    &__form-heading {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+    }
+
+    &__form-input {
+        border: 0;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        background: transparent;
+        padding-top: 62px;
+
+        &::placeholder {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+    }
+
+    &__form-text {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        padding-top: 64px;
+    }
+
+    &__form-button {
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        height: 41px;
+        margin-top: 18px;
+    }
+}
