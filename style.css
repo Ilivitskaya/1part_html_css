@@ -394,7 +394,7 @@ body {
   margin-top: 64px;
 }
 .cart__choice {
-  grid-column: 1/8;
+  grid-column: 1/9;
 }
 .cart__columns {
   display: flex;
@@ -424,6 +424,8 @@ body {
 }
 .cart__product-info {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .cart__product-name {
   color: rgb(0, 0, 0);
@@ -438,7 +440,7 @@ body {
   line-height: 17px;
   padding-top: 14px;
   padding-bottom: 16px;
-  max-width: 276px;
+  max-width: 250px;
 }
 .cart__product-input {
   width: 71px;
@@ -484,7 +486,7 @@ body {
   margin-right: 8px;
 }
 .cart__form {
-  grid-column: 8/12;
+  grid-column: 9/13;
   display: flex;
   flex-direction: column;
   padding-top: 42px;
@@ -495,6 +497,7 @@ body {
 .cart__form {
   border-radius: 20px;
   background: rgb(247, 246, 246);
+  box-sizing: border-box;
 }
 .cart__form-heading {
   color: rgb(0, 0, 0);
